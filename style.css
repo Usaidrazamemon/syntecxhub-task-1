@@ -1,0 +1,196 @@
+ * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    background: #f0f4f8;
+    color: #222;
+  }
+  a {
+    text-decoration: none;
+    color: #3b3b98;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #ff6b6b;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #6a89cc;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  .nav-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .nav-links a:hover {
+    color: #eb3b5a;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      background: white;
+      top: 56px;
+      left: 0;
+      padding: 1rem 2rem;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .nav-toggle {
+      display: block;
+    }
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    background: linear-gradient(135deg, #48dbfb, #fed330);
+    color: #2d3436;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+  .hero p {
+    max-width: 600px;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+  }
+  .btn-primary {
+    background: #d63031;
+    color: white;
+    padding: 1.1rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(214, 54, 54,0.5);
+    transition: all 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #e17055;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(225, 112, 85, 0.7);
+  }
+  .hero-img {
+    margin-top: 3rem;
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  .hero-img svg {
+    width: 180px;
+    height: 180px;
+    fill: #fd79a8;
+  }
+
+  /* Features */
+  .features {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    padding: 4rem 2rem;
+  }
+  .feature {
+    background: #ffeaa7;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    flex: 1 1 280px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.2);
+  }
+  .feature-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    fill: #6a89cc;
+  }
+  .feature h3 {
+    font-size: 1.5rem;
+    color: #6c5ce7;
+    margin-bottom: 1rem;
+  }
+  .feature p {
+    font-size: 1.05rem;
+    color: #353b48;
+    text-align: center;
+  }
+
+  /* CTA section */
+  #cta {
+    padding: 3rem 1rem;
+    background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    text-align: center;
+  }
+  #cta button {
+    background: #6c5ce7;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px 20px rgba(108, 92, 231, 0.6);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  #cta button:hover {
+    background: #5a4acb;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(90, 74, 203, 0.8);
+  }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Product Landing Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">CreativeX</div>
+  <div class="nav-toggle" id="navToggle">&#9776;</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#hero">Home</a>
+    <a href="#features">Features</a>
+    <a href="#cta">Start Now</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <h1>Experience Creativity Like Never Before</h1>
+  <p>Innovative solutions that brighten up your daily workflow and spark your imagination.</p>
+  <button class="btn-primary" id="ctaBtn">Get Started</button>
+  <div class="hero-img" aria-label="Creative light bulb icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 2a14 14 0 0 0-14 14c0 7 10 14 10 14v8h8v-8s10-7 10-14a14 14 0 0 0-14-14z"/>
+      <line x1="32" y1="46" x2="32" y2="58"/>
+      <line x1="24" y1="58" x2="40" y2="58"/>
+    </svg>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="feature">
+    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" stroke="#6a89cc" stroke-width="2" fill="none"/>
+      <path d="M12 6v6l4 2" stroke="#6a89cc" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <h3>Fast Performance</h3>
+    <p>Lightning quick response times to keep you productive and happy.</p>
+  </div>
+
+  <div class="feature">
+    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#6a89cc" d="M12 12c2.21 0 4-1.79 4-4a4 4 0 1 0-8 0c0 2.21 1.79 4 4 4z"/>
+      <path stroke="#6a89cc" stroke-width="2" d="M6 20c0-2.21 3.58-4 6-4s6 1.79 6 4v2H6z"/>
+    </svg>
+    <h3>User Friendly</h3>
+    <p>Simple and intuitive interfaces that everyone loves.</p>
+  </div>
+
+  <div class="feature">
+    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path stroke="#6a89cc" stroke-width="2" d="M3 7h18M3 12h18m-9 5h9"/>
+    </svg>
+    <h3>Customizable</h3>
+    <p>Flexible features that adapt to your unique style and needs.</p>
+  </div>
+</section>
+
+<section id="cta">
+  <button onclick="alert('Thanks for joining us!')">Join the Movement</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
